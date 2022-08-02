@@ -3008,6 +3008,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@stripe/react-stripe-js@npm:^1.10.0":
+  version: 1.10.0
+  resolution: "@stripe/react-stripe-js@npm:1.10.0"
+  dependencies:
+    prop-types: ^15.7.2
+  peerDependencies:
+    "@stripe/stripe-js": ^1.34.0
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 718085cedc5aae06366278d99850845e0be52678369a80e71c7b0f9e1a47ff60ee36a707e7143c723abdf4a945d2d3027d818da3cff929efabd64165b95d52b7
+  languageName: node
+  linkType: hard
+
+"@stripe/stripe-js@npm:^1.34.0":
+  version: 1.34.0
+  resolution: "@stripe/stripe-js@npm:1.34.0"
+  checksum: 897baac88e4ebb7526eb40c07e29e72e23c1f843079811f412042c42e49b74650c2ef152eec00262bf2001e14cbcf40ec77993cd836a313924d0855388aae731
+  languageName: node
+  linkType: hard
+
 "@surma/rollup-plugin-off-main-thread@npm:^2.2.3":
   version: 2.2.3
   resolution: "@surma/rollup-plugin-off-main-thread@npm:2.2.3"
@@ -5579,6 +5599,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "crwn-clothing@workspace:."
   dependencies:
+    "@stripe/react-stripe-js": ^1.10.0
+    "@stripe/stripe-js": ^1.34.0
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^13.0.0
     "@testing-library/user-event": ^13.2.1
@@ -11450,7 +11472,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.8.1":
+"prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:

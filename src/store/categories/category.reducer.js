@@ -18,7 +18,7 @@ export const categoriesReducer = (
         categories: payload,
         isLoading: false,
       };
-    case CATEGORIES_ACTION_TYPES.FETCH_CATEGORIES_IN_PROGRESS:
+    case CATEGORIES_ACTION_TYPES.FETCH_CATEGORIES_START:
       return {
         ...state,
         isLoading: true,
