@@ -6,7 +6,7 @@ import CartDropdown from "../../components/cart-dropdown/cart-dropdown.component
 import CartIcon from "../../components/cart-icon/cart-icon.component";
 import { selectIsCartOpen } from "../../store/cart/cart.selector";
 import { signOutStart } from "../../store/user/user.action";
-import { currentUserSelector } from "../../store/user/user.selector";
+import { selectCurrentUser } from "../../store/user/user.selector";
 import {
   LogoContainer,
   NavigationContainer,
@@ -15,7 +15,7 @@ import {
 } from "./navigation.styles";
 
 const Navigation = () => {
-  const currentUser = useSelector(currentUserSelector);
+  const currentUser = useSelector(selectCurrentUser);
   const isCartOpen = useSelector(selectIsCartOpen);
   const dispatch = useDispatch();
 
